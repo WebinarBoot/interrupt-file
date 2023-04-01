@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+uploadFolder: /Users/webinar/Documents/codes/uploader/java-uploader/src/main/resources/file/
+
+spring:
+  # 配置redis
+  redis:
+    host: 127.0.0.1 # 填写localhost或者远程的ip
+    port: 32773
+    # 设置默认操作的数据库
+    database: 14
+    # 超时时间
+    timeout: 10000ms
+    password: redispw # 填写你的redis服务密码
+    lettuce:
+      pool:
+        # 最大的连接数
+        max-active: 8
+        # 连接阻塞时间，默认-1
+        max-times: 10000ms
+        # 最大空闲连接，默认8
+        max-idle: 200
+        min-idle: 0
+  servlet:
+    multipart:
+      max-file-size: 20480MB
+      max-request-size: 20480MB

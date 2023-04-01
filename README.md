@@ -1,6 +1,6 @@
 # interrupt-file
 
-致谢：青锋，vue-simple-uploader
+致谢：青锋，simple-uploader
 
  
 
